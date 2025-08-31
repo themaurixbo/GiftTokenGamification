@@ -98,6 +98,7 @@ Issuer -> ConfidentialGiftToken (encrypted) -> user requestUnwrap -> relayer -> 
 
 ### Zama fhEVM (optional demo)
 - `ConfidentialGiftToken`: `<(https://sepolia.etherscan.io/address/0x6B6C65d110441Aaaa7e7F5E45c15AdaB93B2c586#code)>`(Verified)
+- `PrivateUnwrap.sol`: https://sepolia.etherscan.io/address/0x4DB1Ff8c868Cd798a175035388358aC83A5c6490#code (Verified)
 
 ---
 
