@@ -78,14 +78,14 @@ Issuer -> ConfidentialGiftToken (encrypted) -> user requestUnwrap -> relayer -> 
  
 
 ### Base Sepolia
-- `GiftToken1155`: `<(https://sepolia.basescan.org/address/0xeaE8e75D49d4b808D00332F03c8E71A315Df9F28#code)>` (Verified)  
-- `CampaignRegistry`: `(https://sepolia.basescan.org/address/0xEbd6E9067A9EF28458Fbc9C5Ff8008dE92A10bcD#code)`  (Verified) 
-- `MerchantRegistry`: `(https://sepolia.basescan.org/address/0x0861b535d353f37b1DEbB380e32FF2737688F583#code)`  (Verified) 
-- `Treasury (USDC: 0x036CbD53842c5426634e7929541eC2318f3dCF7e)`: `(https://sepolia.basescan.org/address/0x9Aad35f76a74a4638F78256D4E13B500Bb736313#code)` (Verified)  
-- `Redeemer`: `(https://sepolia.basescan.org/address/0x0C91d373F3D47fF46b5e0B993fDf247039646Eaf#code)`(Verified) 
+- `GiftToken1155`: <(https://sepolia.basescan.org/address/0xeaE8e75D49d4b808D00332F03c8E71A315Df9F28#code)> (Verified)  
+- `CampaignRegistry`: (https://sepolia.basescan.org/address/0xEbd6E9067A9EF28458Fbc9C5Ff8008dE92A10bcD#code)  (Verified) 
+- `MerchantRegistry`: (https://sepolia.basescan.org/address/0x0861b535d353f37b1DEbB380e32FF2737688F583#code)  (Verified) 
+- `Treasury (USDC: 0x036CbD53842c5426634e7929541eC2318f3dCF7e)`: (https://sepolia.basescan.org/address/0x9Aad35f76a74a4638F78256D4E13B500Bb736313#code) (Verified)  
+- `Redeemer`: (https://sepolia.basescan.org/address/0x0C91d373F3D47fF46b5e0B993fDf247039646Eaf#code)(Verified) 
 
 ### Lisk Sepolia
-- `MockUSDC6`: `<(https://sepolia.etherscan.io/address/0xb5F9f77510C0416892a9526F32B33B5B813F347C#code)>`  
+- `MockUSDC6`: <(https://sepolia.etherscan.io/address/0xb5F9f77510C0416892a9526F32B33B5B813F347C#code)> 
 - `GiftToken1155`: `<addr>`  
 - `CampaignRegistry`: `<addr>`  
 - `MerchantRegistry`: `<addr>`  
@@ -93,11 +93,11 @@ Issuer -> ConfidentialGiftToken (encrypted) -> user requestUnwrap -> relayer -> 
 - `Redeemer`: `<addr>`
 
 ### Flare Coston2
-- `FlarePriceProxySimple`: `(https://testnet.routescan.io/address/0xeaE8e75D49d4b808D00332F03c8E71A315Df9F28/contract/114/code)` (Verified)  
-- `FlarePayout (price=<proxy>, signer=<signer_addr>)`: `(https://testnet.routescan.io/address/0xEbd6E9067A9EF28458Fbc9C5Ff8008dE92A10bcD/contract/114/code)` (Verified)
+- `FlarePriceProxySimple`: (https://testnet.routescan.io/address/0xeaE8e75D49d4b808D00332F03c8E71A315Df9F28/contract/114/code) (Verified)  
+- `FlarePayout (price=<proxy>, signer=<signer_addr>)`: (https://testnet.routescan.io/address/0xEbd6E9067A9EF28458Fbc9C5Ff8008dE92A10bcD/contract/114/code) (Verified)
 
 ### Zama fhEVM (optional demo)
-- `ConfidentialGiftToken`: `<(https://sepolia.etherscan.io/address/0x6B6C65d110441Aaaa7e7F5E45c15AdaB93B2c586#code)>`(Verified)
+- `ConfidentialGiftToken`: <(https://sepolia.etherscan.io/address/0x6B6C65d110441Aaaa7e7F5E45c15AdaB93B2c586#code)>(Verified)
 - `PrivateUnwrap.sol`: https://sepolia.etherscan.io/address/0x4DB1Ff8c868Cd798a175035388358aC83A5c6490#code (Verified)
 
 ---
