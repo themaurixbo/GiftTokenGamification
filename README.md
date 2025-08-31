@@ -85,7 +85,7 @@ Issuer -> ConfidentialGiftToken (encrypted) -> user requestUnwrap -> relayer -> 
 - `Redeemer`: `(https://sepolia.basescan.org/address/0x0C91d373F3D47fF46b5e0B993fDf247039646Eaf#code)`(Verified) 
 
 ### Lisk Sepolia
-- `MockUSDC6`: `<addr>`  
+- `MockUSDC6`: `<(https://sepolia.etherscan.io/address/0xb5F9f77510C0416892a9526F32B33B5B813F347C#code)>`  
 - `GiftToken1155`: `<addr>`  
 - `CampaignRegistry`: `<addr>`  
 - `MerchantRegistry`: `<addr>`  
