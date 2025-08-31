@@ -1,0 +1,75 @@
+[
+  {
+    "type": "function",
+    "name": "getUSD6",
+    "inputs": [
+      {
+        "name": "asset",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [
+      {
+        "name": "usd6",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "lastUpdatedAt",
+    "inputs": [
+      {
+        "name": "asset",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [
+      {
+        "name": "ts",
+        "type": "uint64",
+        "indexed": false
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "setFeed",
+    "inputs": [
+      {
+        "name": "asset",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "feed",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "event",
+    "name": "PriceFeedUpdated",
+    "inputs": [
+      {
+        "name": "asset",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "usd6",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "type": "function",
+    "name": "quoteRedeem",
+    "inputs": [
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "outputs": [
+      {
+        "name": "usd6Payable",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "redeem",
+    "inputs": [
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "merchant",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "payWithGIF",
+    "inputs": [
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "merchant",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "quoteSwapUSDCForGIF",
+    "inputs": [
+      {
+        "name": "usd6",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "outputs": [
+      {
+        "name": "tokenAmount",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "swapUSDCForGIF",
+    "inputs": [
+      {
+        "name": "usd6",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "to",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "swapGIFForUSDC",
+    "inputs": [
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "to",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setStablecoin",
+    "inputs": [
+      {
+        "name": "stable",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setTreasury",
+    "inputs": [
+      {
+        "name": "treasury",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setMerchantRegistry",
+    "inputs": [
+      {
+        "name": "reg",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setCampaignRegistry",
+    "inputs": [
+      {
+        "name": "reg",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "event",
+    "name": "Redeemed",
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "merchant",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "usd6",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Swapped",
+    "inputs": [
+      {
+        "name": "direction",
+        "type": "string",
+        "indexed": false
+      },
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "usd6",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "StablecoinChanged",
+    "inputs": [
+      {
+        "name": "old",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "new",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Funded",
+    "inputs": [
+      {
+        "name": "from",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  }
+]

@@ -1,0 +1,225 @@
+[
+  {
+    "type": "function",
+    "name": "createCampaign",
+    "inputs": [
+      {
+        "name": "issuer",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "merchant",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "unitValueUSD6",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "startTs",
+        "type": "uint64",
+        "indexed": false
+      },
+      {
+        "name": "endTs",
+        "type": "uint64",
+        "indexed": false
+      },
+      {
+        "name": "maxSupply",
+        "type": "uint32",
+        "indexed": false
+      },
+      {
+        "name": "termsCidHash",
+        "type": "bytes32",
+        "indexed": false
+      },
+      {
+        "name": "active",
+        "type": "bool",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "toggleCampaign",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "active",
+        "type": "bool",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "updateUnitValue",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "newUSD6",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "isActive",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "indexed": false
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getCampaign",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "outputs": [
+      {
+        "name": "issuer",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "merchant",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "unitValueUSD6",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "startTs",
+        "type": "uint64",
+        "indexed": false
+      },
+      {
+        "name": "endTs",
+        "type": "uint64",
+        "indexed": false
+      },
+      {
+        "name": "maxSupply",
+        "type": "uint32",
+        "indexed": false
+      },
+      {
+        "name": "termsCidHash",
+        "type": "bytes32",
+        "indexed": false
+      },
+      {
+        "name": "active",
+        "type": "bool",
+        "indexed": false
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "event",
+    "name": "CampaignCreated",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "issuer",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "unitValueUSD6",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "CampaignUpdated",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "field",
+        "type": "string",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "CampaignToggled",
+    "inputs": [
+      {
+        "name": "id",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "active",
+        "type": "bool",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  }
+]

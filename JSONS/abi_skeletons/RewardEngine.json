@@ -1,0 +1,115 @@
+[
+  {
+    "type": "function",
+    "name": "awardGift",
+    "inputs": [
+      {
+        "name": "to",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "proof",
+        "type": "bytes",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "awardUSDC",
+    "inputs": [
+      {
+        "name": "to",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "usd6Amount",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "proof",
+        "type": "bytes",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setTrustedSigner",
+    "inputs": [
+      {
+        "name": "signer",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "event",
+    "name": "GiftAwarded",
+    "inputs": [
+      {
+        "name": "to",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "tokenId",
+        "type": "uint256",
+        "indexed": true
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "proofDigest",
+        "type": "bytes32",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "USDCRewarded",
+    "inputs": [
+      {
+        "name": "to",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "usd6Amount",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "proofDigest",
+        "type": "bytes32",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  }
+]

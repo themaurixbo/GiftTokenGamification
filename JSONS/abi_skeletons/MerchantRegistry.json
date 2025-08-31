@@ -1,0 +1,163 @@
+[
+  {
+    "type": "function",
+    "name": "addMerchant",
+    "inputs": [
+      {
+        "name": "merchant",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "payoutWallet",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "feeBps",
+        "type": "uint16",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "removeMerchant",
+    "inputs": [
+      {
+        "name": "merchant",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setPayout",
+    "inputs": [
+      {
+        "name": "merchant",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "payoutWallet",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setFeeBps",
+    "inputs": [
+      {
+        "name": "merchant",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "feeBps",
+        "type": "uint16",
+        "indexed": false
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "isAllowed",
+    "inputs": [
+      {
+        "name": "merchant",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "indexed": false
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getMerchant",
+    "inputs": [
+      {
+        "name": "merchant",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "outputs": [
+      {
+        "name": "allowed",
+        "type": "bool",
+        "indexed": false
+      },
+      {
+        "name": "payoutWallet",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "feeBps",
+        "type": "uint16",
+        "indexed": false
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "event",
+    "name": "MerchantAdded",
+    "inputs": [
+      {
+        "name": "merchant",
+        "type": "address",
+        "indexed": true
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "MerchantRemoved",
+    "inputs": [
+      {
+        "name": "merchant",
+        "type": "address",
+        "indexed": true
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "MerchantUpdated",
+    "inputs": [
+      {
+        "name": "merchant",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "field",
+        "type": "string",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  }
+]
